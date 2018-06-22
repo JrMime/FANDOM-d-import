@@ -1,7 +1,7 @@
 {
-  "name": "FANDOM Global Discussions JS Importer",
+  "name": "FANDOM Global Discussions JS & CSS Importer",
   "version": "1.0",
-  "description": "Imports custom JavaScript into all Discussions on FANDOM",
+  "description": "Imports custom JavaScript and CSS into all Discussions on FANDOM",
   "content_scripts": [{
     "run_at" :"document_end",
     "matches": ["*://*.wikia.com/d*"],
