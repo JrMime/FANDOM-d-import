@@ -1,5 +1,5 @@
 {
-  "name": "FANDOM Global Discussions JS & CSS Importer",
+  "name": "Customize Discussions",
   "version": "1.0",
   "description": "Imports custom JavaScript and CSS into all Discussions on FANDOM",
   "content_scripts": [{
