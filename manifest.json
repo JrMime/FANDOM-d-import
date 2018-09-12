@@ -1,4 +1,9 @@
 {
+  "applications": {
+    "gecko": {
+      "id": "FANDOM-d-import@addon"
+    }
+  },
   "name": "Customize Discussions",
   "version": "1.0",
   "description": "Imports custom JavaScript and CSS into all Discussions on FANDOM",
