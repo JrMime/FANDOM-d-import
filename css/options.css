@@ -1,0 +1,22 @@
+body {
+    font-size: 12px;
+    min-height: 200px;
+    min-width: 500px;
+}
+
+h1 {
+    display: none;
+}
+
+.js-other, .css-other {
+    display: none;
+}
+
+body.js-other-display .js-other,
+body.css-other-display .css-other {
+    display: block;
+}
+
+#status {
+    margin-top: 10px;
+}
