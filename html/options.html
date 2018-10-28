@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CustomizeDiscussions Options</title>
+        <script src="../js/options.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="../css/options.css" type="text/css" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>CustomizeDiscussions Options</h1>
+        <form id="form">
+            <fieldset>
+                <legend>JavaScript</legend>
+                <p>
+                    <label for="js-type">Import source:</label>
+                    <select name="js-type" id="js-type">
+                        <option>cc - globalDiscussions.javascript</option>
+                        <option>cc - globalDiscussions.css</option>
+                        <option>cc - common.js</option>
+                        <option>Your link of choice</option>
+                    </select>
+                </p>
+                <p class="js-other">
+                    <label for="js-other-wiki">Wiki URL (please follow format):</label>
+                    <input type="text" name="js-other-wiki" id="js-other-wiki" placeholder="https://community.wikia.com" />
+                </p>
+                <p class="js-other">
+                    <label for="js-other-page">Page name:</label>
+                    <input type="text" name="js-other-page" id="js-other-page" placeholder="User:Jr Mime/gDiscussions.javascript" />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>CSS</legend>
+                <p>
+                    <label for="css-type">Import source:</label>
+                    <select name="css-type" id="css-type">
+                        <option>cc - globalDiscussions.css</option>
+                        <option>Your link of choice</option>
+                    </select>
+                </p>
+                <p class="css-other">
+                    <label for="css-other-wiki">Wiki URL (please follow format):</label>
+                    <input type="text" name="css-other-wiki" id="css-other-wiki" placeholder="https://community.wikia.com" />
+                </p>
+                <p class="css-other">
+                    <label for="css-other-page">Page name:</label>
+                    <input type="text" name="css-other-page" id="css-other-page" placeholder="User:Jr Mime/gDiscussions.css" />
+                </p>
+            </fieldset>
+            <div id="status"></div>
+            <input type="submit" id="save" value="Save" />
+        </form>
+    </body>
+</html>
