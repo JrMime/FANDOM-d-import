@@ -5,14 +5,14 @@
         }
     },
     "name": "Customize Discussions",
-    "version": "1.2",
-    "description": "Imports custom JavaScript and CSS into all Discussions on FANDOM",
+    "version": "1.3",
+    "description": "Imports custom JavaScript and CSS into all Discussions on Fandom",
     "content_scripts": [
         {
             "run_at" :"document_end",
             "matches": [
-                "*://*.wikia.com/d*",
-                "*://*.fandom.com/d*"
+                "*://*.fandom.com/d*",
+                "*://*.fandom.com/f*"
             ],
             "js": [
                 "js/import.js"
