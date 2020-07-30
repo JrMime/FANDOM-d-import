@@ -12,7 +12,7 @@
     var DEFAULTS = {
         css: 'Special:MyPage/globalDiscussions.css',
         js: 'Special:MyPage/globalDiscussions.javascript',
-        wiki: 'https://community.wikia.com'
+        wiki: 'https://community.fandom.com'
     }, TYPES = ['js', 'css'];
 
     /**

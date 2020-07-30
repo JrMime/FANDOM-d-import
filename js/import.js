@@ -7,7 +7,7 @@
     var DEFAULTS = {
         css: 'Special:MyPage/globalDiscussions.css',
         js: 'Special:MyPage/globalDiscussions.javascript',
-        wiki: 'https://community.wikia.com'
+        wiki: 'https://community.fandom.com'
     }, TYPES = ['js', 'css'], JS_PAGES = [
         DEFAULTS.js,
         'Special:MyPage/globalDiscussions.css',
@@ -24,7 +24,7 @@
     function importJS(prefs) {
         var page = JS_PAGES[prefs.type],
             url = (page ? DEFAULTS : prefs).wiki;
-        url += '/index.php?title=' + encodeURIComponent(page) +
+        url += '/index.php?title=' + encodeURIComponent(page || prefs.page) +
                '&action=raw&ctype=text/javascript';
         importJSByURL('https://code.jquery.com/jquery-3.3.1.min.js');
         importJSByURL(url);
@@ -66,7 +66,7 @@
         TYPES.forEach(function(type) {
             prefs[type + '-type'] = 0;
             prefs[type + '-wiki'] = DEFAULTS.wiki;
-            prefs[type + '-page'] = DEFAULTS.page;
+            prefs[type + '-page'] = DEFAULTS[type];
         });
         chrome.storage.sync.get(prefs, preferences);
     }
