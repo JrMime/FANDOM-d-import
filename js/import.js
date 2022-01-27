@@ -6,7 +6,7 @@
      */
     var DEFAULTS = {
         css: 'Special:MyPage/globalDiscussions.css',
-        js: 'Special:MyPage/globalDiscussions.javascript',
+        js: 'Special:MyPage/globalDiscussions.js',
         wiki: 'https://community.fandom.com'
     }, TYPES = ['js', 'css'], JS_PAGES = [
         DEFAULTS.js,
@@ -26,7 +26,7 @@
             url = (page ? DEFAULTS : prefs).wiki;
         url += '/index.php?title=' + encodeURIComponent(page || prefs.page) +
                '&action=raw&ctype=text/javascript';
-        importJSByURL('https://code.jquery.com/jquery-3.3.1.min.js');
+        importJSByURL(chrome.extension.getURL('lib/jquery-3.3.1.min.js'));
         importJSByURL(url);
     }
 
