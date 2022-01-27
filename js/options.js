@@ -11,7 +11,7 @@
      */
     var DEFAULTS = {
         css: 'Special:MyPage/globalDiscussions.css',
-        js: 'Special:MyPage/globalDiscussions.javascript',
+        js: 'Special:MyPage/globalDiscussions.js',
         wiki: 'https://community.fandom.com'
     }, TYPES = ['js', 'css'];
 
